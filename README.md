@@ -1,25 +1,11 @@
-# Foundation Library
-Foundation Library is a free open source product that contains lots of useful APIs, Utilities and Extension methods. We do not provide any articles or tutorials for these plugins. But we do try to keep every public API documented and self-explanatory.
+# Web API
+Contains JSON based abstract web service implementation. See samples and wiki for more information.
 
-[![NPM Package](https://img.shields.io/npm/v/com.stansassets.foundation)](https://www.npmjs.com/package/com.stansassets.foundation)
-[![openupm](https://img.shields.io/npm/v/com.stansassets.foundation?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.stansassets.foundation/)
-[![Licence](https://img.shields.io/npm/l/com.stansassets.foundation)](https://github.com/StansAssets/com.stansassets.foundation/blob/master/LICENSE)
-[![Issues](https://img.shields.io/github/issues/StansAssets/com.stansassets.foundation)](https://github.com/StansAssets/com.stansassets.foundation/issues)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a22ff0164da04d089f68d8209dbe6c10)](https://app.codacy.com/gh/StansAssets/com.stansassets.foundation?utm_source=github.com&utm_medium=referral&utm_content=StansAssets/com.stansassets.foundation&utm_campaign=Badge_Grade_Dashboard)
-
-
-[API Reference](https://api.stansassets.com/foundation/StansAssets.Foundation.html) | [Wiki](https://github.com/StansAssets/com.stansassets.foundation/wiki) | [Unity Forum](https://forum.unity.com/threads/free-stans-assets-foundation-library.975999/) | [Asset Store](https://assetstore.unity.com/packages/tools/utilities/foundation-library-179726)
-
-#### Quick links to explore the library:
-* [Utilities.](https://api.stansassets.com/foundation/StansAssets.Foundation.html) The collection of various utility methods.
-* [Editor Utilities.](https://api.stansassets.com/foundation/StansAssets.Foundation.Editor.html)The collection of utility methods for the Unity Editor.
-* [Extensions.](https://api.stansassets.com/foundation/StansAssets.Foundation.Extensions.html) Extension methods for default C# and Unity Objects.
-* [Patterns.](https://api.stansassets.com/foundation/StansAssets.Foundation.Patterns.html) Implementation of well-known design patterns like Singleton, Factory, Pool, etc.
-   * [Event Bus](https://github.com/StansAssets/com.stansassets.foundation/wiki/Event-Bus)
-   * [Singleton](https://github.com/StansAssets/com.stansassets.foundation/wiki/Singleton)
-   * [Objects Pool](https://github.com/StansAssets/com.stansassets.foundation/wiki/Pooling-Pattern)
-   * [Service Locator](https://github.com/StansAssets/com.stansassets.foundation/wiki/Service-Locator)
-* [UI Toolkit.](https://api.stansassets.com/foundation/StansAssets.Foundation.UIElements.html) Helper methods, extensions, utilities for the new Unity [UI Toolkit framework](https://docs.unity3d.com/Manual/UIElements.html).
+[![NPM Package](https://img.shields.io/npm/v/com.stansassets.web)](https://www.npmjs.com/package/com.stansassets.web)
+[![openupm](https://img.shields.io/npm/v/com.stansassets.web?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.stansassets.web/)
+[![Licence](https://img.shields.io/npm/l/com.stansassets.web)](https://github.com/StansAssets/com.stansassets.web/blob/master/LICENSE)
+[![Issues](https://img.shields.io/github/issues/StansAssets/com.stansassets.web)](https://github.com/StansAssets/com.stansassets.web/issues)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a22ff0164da04d089f68d8209dbe6c10)](https://app.codacy.com/gh/StansAssets/com.stansassets.web?utm_source=github.com&utm_medium=referral&utm_content=StansAssets/com.stansassets.web&utm_campaign=Badge_Grade_Dashboard)
 
 
 ### Install from NPM
@@ -27,9 +13,9 @@ Foundation Library is a free open source product that contains lots of useful AP
 * Adjust the [project manifest file](https://docs.unity3d.com/Manual/upm-manifestPrj.html) `manifest.json` in a text editor.
 * Ensure `https://registry.npmjs.org/` is part of `scopedRegistries`.
   * Ensure `com.stansassets` is part of `scopes`.
-  * Add `com.stansassets.foundation` to the `dependencies`, stating the latest version.
+  * Add `com.stansassets.web` to the `dependencies`, stating the latest version.
 
-A minimal example ends up looking like this. Please note that the version `X.Y.Z` stated here is to be replaced with [the latest released version](https://www.npmjs.com/package/com.stansassets.foundation) which is currently [![NPM Package](https://img.shields.io/npm/v/com.stansassets.foundation)](https://www.npmjs.com/package/com.stansassets.foundation).
+A minimal example ends up looking like this. Please note that the version `X.Y.Z` stated here is to be replaced with [the latest released version](https://www.npmjs.com/package/com.stansassets.web) which is currently [![NPM Package](https://img.shields.io/npm/v/com.stansassets.web)](https://www.npmjs.com/package/com.stansassets.web).
   ```json
   {
     "scopedRegistries": [
@@ -42,7 +28,7 @@ A minimal example ends up looking like this. Please note that the version `X.Y.Z
       }
     ],
     "dependencies": {
-      "com.stansassets.foundation": "X.Y.Z",
+      "com.stansassets.web": "X.Y.Z",
       ...
     }
   }
@@ -52,7 +38,7 @@ A minimal example ends up looking like this. Please note that the version `X.Y.Z
 ### Install from OpenUPM
 * Install openupm-cli `npm install -g openupm-cli` or `yarn global add openupm-cli`
 * Enter your unity project folder `cd <YOUR_UNITY_PROJECT_FOLDER>`
-* Install package `openupm add com.stansassets.foundation`
+* Install package `openupm add com.stansassets.web`
 
 ### Install from a Git URL
 Yoy can also install this package via Git URL. To load a package from a Git URL:
@@ -61,12 +47,12 @@ Yoy can also install this package via Git URL. To load a package from a Git URL:
 * Click the add **+** button in the status bar.
 * The options for adding packages appear.
 * Select Add package from git URL from the add menu. A text box and an Add button appear.
-* Enter the `https://github.com/StansAssets/com.stansassets.foundation.git` Git URL in the text box and click Add.
+* Enter the `https://github.com/StansAssets/com.stansassets.web.git` Git URL in the text box and click Add.
 * You may also install a specific package version by using the URL with the specified version.
-  * `https://github.com/StansAssets/com.stansassets.foundation.git#X.Y.X`
+  * `https://github.com/StansAssets/com.stansassets.web.git#X.Y.X`
   * Please note that the version `X.Y.Z` stated here is to be replaced with the version you would like to get.
-  * You can find all the available releases [here](https://github.com/StansAssets/com.stansassets.foundation/releases).
-  * The latest available release version is [![Last Release](https://img.shields.io/github/v/release/stansassets/com.stansassets.foundation)](https://github.com/StansAssets/com.stansassets.foundation/releases/latest)
+  * You can find all the available releases [here](https://github.com/StansAssets/com.stansassets.web/releases).
+  * The latest available release version is [![Last Release](https://img.shields.io/github/v/release/stansassets/com.stansassets.web)](https://github.com/StansAssets/com.stansassets.web/releases/latest)
 
 For more information about what protocols Unity supports, see [Git URLs](https://docs.unity3d.com/Manual/upm-git.html).
 
