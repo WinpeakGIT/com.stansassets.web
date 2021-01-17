@@ -1,6 +1,6 @@
 {
-  "name": "com.stansassets.web",
-  "displayName": "Stans Assets - Web",
+  "name": "com.winpeak.web",
+  "displayName": "WinPeak - Web",
   "version": "0.0.1-preview",
   "unity": "2019.4",
   "description": "Services to work with Web API requests.",
