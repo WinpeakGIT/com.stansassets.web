@@ -1,4 +1,7 @@
-# Web API
+# Winpeak Web API
+Forked from Stan's Assets organization. 
+
+#Forked Repository desscribtion
 Contains JSON based abstract web service implementation. See samples and wiki for more information.
 
 [![NPM Package](https://img.shields.io/npm/v/com.stansassets.web)](https://www.npmjs.com/package/com.stansassets.web)
